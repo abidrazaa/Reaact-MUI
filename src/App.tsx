@@ -1,5 +1,6 @@
 import './App.css';
 import { MuiButtons } from './components/buttons/Buttons';
+import { ButtonToggle } from './components/buttons/ToggleButton';
 import MuiTypography from './components/typography/MuiTypography';
 
 function App() {
@@ -9,8 +10,9 @@ function App() {
       <p>More changes coming soon....</p>
       <MuiTypography />
       <hr />
-      <br />
       <MuiButtons />
+      <hr />
+      <ButtonToggle />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import {Stack, Button, IconButton} from "@mui/material"
+import {Stack, Button, IconButton, ButtonGroup} from "@mui/material"
 import SendIcon from '@mui/icons-material/Send';
 
 export const MuiButtons = () => {
@@ -38,6 +38,8 @@ export const MuiButtons = () => {
 
                 {/* SIZE of Buttons */}
 
+                <h1>Sizes of Button</h1>
+
                 <Stack display="block" spacing={2} direction="row">
                     <Button variant="contained" size="large">Large</Button>
                     <Button variant="contained" size="medium">Medium</Button>
@@ -48,12 +50,35 @@ export const MuiButtons = () => {
 
                 {/* ICON Buttons */}
 
+                <h1>Icon Button</h1>
+
                 <Stack display="block" spacing={2} direction="row">
                     <Button variant="contained" size="large" startIcon={<SendIcon />}>Send</Button>
                     <Button variant="contained" size="large" endIcon={<SendIcon />}>Send</Button>
-                    <IconButton color="success" size="small">
+                    <IconButton color="success" size="small" onClick={()=>alert("button clicked")}>
                         <SendIcon />
                     </IconButton>
+                </Stack>
+
+                <br />
+
+                {/* Button Group */}
+
+                <h1>Button Group</h1>
+
+                <Stack display="block">
+                    <ButtonGroup variant="contained" size="small" orientation="vertical" color="warning">
+                        <Button>Left</Button>
+                        <Button>Center</Button>
+                        <Button>Right</Button>
+                    </ButtonGroup>     
+                    <br />
+                    <br />
+                    <ButtonGroup variant="outlined" size="small" color="secondary">
+                        <Button>Left</Button>
+                        <Button>Center</Button>
+                        <Button>Right</Button>
+                    </ButtonGroup>          
                 </Stack>
             </Stack>
         </div>

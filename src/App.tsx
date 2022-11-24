@@ -1,6 +1,7 @@
 import './App.css';
 import { MuiButtons } from './components/buttons/Buttons';
 import { ButtonToggle } from './components/buttons/ToggleButton';
+import { Select } from './components/select/Select';
 import { InputField } from './components/text-fields/InputField';
 import MuiTypography from './components/typography/MuiTypography';
 
@@ -17,6 +18,10 @@ function App() {
       <hr />
       <InputField />
       <hr />
+      <Select />
+      <br />
+      <br />
+      <br />
     </div>
   );
 }
